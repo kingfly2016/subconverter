@@ -74,6 +74,7 @@ struct Proxy
     bool TLSSecure = false;
 
     String Flow;
+    bool FlowShow = false;
     String Sni;
     String Host;
     String Path;
@@ -81,6 +82,8 @@ struct Proxy
 
     String QUICSecure;
     String QUICSecret;
+    String GRPCServiceName;
+    String GRPCMode;
 
     tribool UDP;
     tribool TCPFastOpen;
